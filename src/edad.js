@@ -1,12 +1,22 @@
-const nombre = prompt("Cual es tu name? ");
-console.log(`Hola ${nombre}`)
+let nombre = prompt("Cual es tu name? ");
+console.log(`Hola ${nombre}`);
+alert(`Hola ${nombre}`);
+document.writeln(`Hola ${nombre}`)
 
 const edad = parseInt(prompt("¿Cúal es tu edad? "));
 
-if(edad >= 18){
+#funciondeclarada - Hoisting
+
+function calcular_edad (nombre, edad){
+    
+
+    if(edad >= 18){
     console.log(`${nombre} es mayor de edad`);
-} else{
+    } else{
     console.log(`${nombre} es menor de edad`)
+    }
 }
 
-//pedir nombres, carrera,calificaciones,  tres calificaciones,calcular promedio, salga nombre del alumno, la carrera, el promedio y si aprueba, promedio 35<= reprobado 
+
+calcular_edad(nombre, edad)
+
